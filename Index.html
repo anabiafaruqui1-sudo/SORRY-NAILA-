@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sorry Naila ❤️</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', cursive;
+  background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #ffdde1);
+  background-size: 400% 400%;
+  animation: bg 10s infinite;
+  overflow-x: hidden;
+}
+
+@keyframes bg {
+  0% {background-position: 0%}
+  50% {background-position: 100%}
+  100% {background-position: 0%}
+}
+
+.container {
+  max-width: 420px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #ff3366;
+}
+
+p {
+  color: #333;
+  line-height: 1.7;
+}
+
+/* image style */
+img {
+  width: 100%;
+  border-radius: 20px;
+  margin: 15px 0;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+/* button */
+button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  background: #ff3366;
+  color: white;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* hearts */
+.heart {
+  position: fixed;
+  bottom: -10px;
+  animation: float 6s linear infinite;
+  color: pink;
+}
+
+@keyframes float {
+  to {
+    transform: translateY(-800px);
+    opacity: 0;
+  }
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>I'm Sorry Naila 💔</h1>
+
+  <img src="pic1.jpg">
+  
+  <p>
+    Naila… 🥺<br><br>
+
+    Jab bhi main in photos ko dekhta hoon na…  
+    mujhe realize hota hai ki tu meri life me kitni important hai ❤️<br><br>
+
+    Shayad maine tujhe hurt kiya… aur uska regret mujhe har waqt feel hota hai 😔<br><br>
+
+    Tu sirf ek friend nahi hai…  
+    tu meri happiness ka reason hai 💞
+  </p>
+
+  <img src="pic2.jpg">
+
+  <p>
+    Jab tu naraz hoti hai na…  
+    sab kuch empty sa lagta hai 🥺<br><br>
+
+    Main bas itna chahta hoon…  
+    ki tu wapas smile kare ❤️
+  </p>
+
+  <img src="pic3.jpg">
+
+  <p>
+    Please Naila… mujhe maaf kar de 🙏<br><br>
+
+    Main promise karta hoon…  
+    main better banunga… sirf tere liye ❤️<br><br>
+
+    Main wait karunga… jitna bhi time lage 💔
+  </p>
+
+  <button onclick="alert('Thank you Naila ❤️ Please smile again')">
+    Ek chance aur de do 🥺
+  </button>
+
+</div>
+
+<script>
+setInterval(()=>{
+  let h=document.createElement("div");
+  h.className="heart";
+  h.innerHTML="💖";
+  h.style.left=Math.random()*100+"vw";
+  h.style.fontSize=(Math.random()*20+10)+"px";
+  document.body.appendChild(h);
+  setTimeout(()=>h.remove(),6000);
+},300);
+
+setTimeout(()=>{
+  alert("Naila… please ek baar pura dekh lena 🥺❤️");
+},1000);
+</script>
+
+</body>
+  </html>
